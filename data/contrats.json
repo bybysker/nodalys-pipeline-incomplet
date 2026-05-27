@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "client_id": 8,
+    "session_id": 36,
+    "statut": "solde",
+    "montant_ht": 12392.14,
+    "date_signature": "2024-07-13"
+  },
+  {
+    "id": 2,
+    "client_id": 3,
+    "session_id": 33,
+    "statut": "solde",
+    "montant_ht": 16487.3,
+    "date_signature": "2024-07-09"
+  },
+  {
+    "id": 3,
+    "client_id": 2,
+    "session_id": 29,
+    "statut": "actif",
+    "montant_ht": 5261.29,
+    "date_signature": "2025-07-05"
+  },
+  {
+    "id": 4,
+    "client_id": 1,
+    "session_id": 39,
+    "statut": "solde",
+    "montant_ht": 24189.43,
+    "date_signature": "2024-06-10"
+  },
+  {
+    "id": 5,
+    "client_id": 1,
+    "session_id": 34,
+    "statut": "actif",
+    "montant_ht": 3369.68,
+    "date_signature": "2024-07-13"
+  },
+  {
+    "id": 6,
+    "client_id": 4,
+    "session_id": 39,
+    "statut": "actif",
+    "montant_ht": 19896.49,
+    "date_signature": "2024-11-30"
+  },
+  {
+    "id": 7,
+    "client_id": 8,
+    "session_id": 38,
+    "statut": "actif",
+    "montant_ht": 13939.85,
+    "date_signature": "2024-10-28"
+  },
+  {
+    "id": 8,
+    "client_id": 8,
+    "session_id": 1,
+    "statut": "actif",
+    "montant_ht": 12518.59,
+    "date_signature": "2024-10-11"
+  },
+  {
+    "id": 9,
+    "client_id": 7,
+    "session_id": 36,
+    "statut": "actif",
+    "montant_ht": 18279.62,
+    "date_signature": "2024-11-18"
+  },
+  {
+    "id": 10,
+    "client_id": 4,
+    "session_id": 33,
+    "statut": "actif",
+    "montant_ht": 2684.29,
+    "date_signature": "2025-07-30"
+  },
+  {
+    "id": 11,
+    "client_id": 2,
+    "session_id": 26,
+    "statut": "actif",
+    "montant_ht": 21471.42,
+    "date_signature": "2025-01-30"
+  },
+  {
+    "id": 12,
+    "client_id": 2,
+    "session_id": 2,
+    "statut": "actif",
+    "montant_ht": 6910.54,
+    "date_signature": "2024-02-23"
+  },
+  {
+    "id": 13,
+    "client_id": 8,
+    "session_id": 25,
+    "statut": "solde",
+    "montant_ht": 11655.2,
+    "date_signature": "2025-08-02"
+  },
+  {
+    "id": 14,
+    "client_id": 4,
+    "session_id": 44,
+    "statut": "actif",
+    "montant_ht": 9748.54,
+    "date_signature": "2024-11-14"
+  },
+  {
+    "id": 15,
+    "client_id": 6,
+    "session_id": 1,
+    "statut": "solde",
+    "montant_ht": 19434.93,
+    "date_signature": "2024-04-30"
+  },
+  {
+    "id": 16,
+    "client_id": 3,
+    "session_id": 16,
+    "statut": "actif",
+    "montant_ht": 2251.97,
+    "date_signature": "2025-04-21"
+  },
+  {
+    "id": 17,
+    "client_id": 8,
+    "session_id": 12,
+    "statut": "actif",
+    "montant_ht": 12290.77,
+    "date_signature": "2024-07-14"
+  },
+  {
+    "id": 18,
+    "client_id": 3,
+    "session_id": 27,
+    "statut": "solde",
+    "montant_ht": 4679.68,
+    "date_signature": "2025-03-06"
+  },
+  {
+    "id": 19,
+    "client_id": 4,
+    "session_id": 1,
+    "statut": "actif",
+    "montant_ht": 21879.68,
+    "date_signature": "2024-11-07"
+  },
+  {
+    "id": 20,
+    "client_id": 1,
+    "session_id": 14,
+    "statut": "actif",
+    "montant_ht": 11068.32,
+    "date_signature": "2025-08-13"
+  },
+  {
+    "id": 21,
+    "client_id": 2,
+    "session_id": 3,
+    "statut": "actif",
+    "montant_ht": 6904.6,
+    "date_signature": "2024-09-21"
+  },
+  {
+    "id": 22,
+    "client_id": 1,
+    "session_id": 40,
+    "statut": "actif",
+    "montant_ht": 21096.66,
+    "date_signature": "2025-01-30"
+  },
+  {
+    "id": 23,
+    "client_id": 2,
+    "session_id": 5,
+    "statut": "actif",
+    "montant_ht": 6800.87,
+    "date_signature": "2024-09-05"
+  },
+  {
+    "id": 24,
+    "client_id": 1,
+    "session_id": 39,
+    "statut": "actif",
+    "montant_ht": 10549.19,
+    "date_signature": "2025-04-09"
+  },
+  {
+    "id": 25,
+    "client_id": 3,
+    "session_id": 38,
+    "statut": "solde",
+    "montant_ht": 21144.26,
+    "date_signature": "2024-05-18"
+  },
+  {
+    "id": 26,
+    "client_id": 7,
+    "session_id": 12,
+    "statut": "actif",
+    "montant_ht": 9148.66,
+    "date_signature": "2024-08-21"
+  },
+  {
+    "id": 27,
+    "client_id": 4,
+    "session_id": 13,
+    "statut": "actif",
+    "montant_ht": 19006.76,
+    "date_signature": "2025-07-21"
+  },
+  {
+    "id": 28,
+    "client_id": 4,
+    "session_id": 44,
+    "statut": "solde",
+    "montant_ht": 22290.36,
+    "date_signature": "2024-03-21"
+  },
+  {
+    "id": 29,
+    "client_id": 7,
+    "session_id": 4,
+    "statut": "actif",
+    "montant_ht": 4508.09,
+    "date_signature": "2025-06-08"
+  },
+  {
+    "id": 30,
+    "client_id": 5,
+    "session_id": 16,
+    "statut": "solde",
+    "montant_ht": 7910.57,
+    "date_signature": "2025-05-17"
+  },
+  {
+    "id": 31,
+    "client_id": 5,
+    "session_id": 34,
+    "statut": "actif",
+    "montant_ht": 23372.43,
+    "date_signature": "2024-03-11"
+  },
+  {
+    "id": 32,
+    "client_id": 3,
+    "session_id": 15,
+    "statut": "solde",
+    "montant_ht": 14865.43,
+    "date_signature": "2024-03-16"
+  },
+  {
+    "id": 33,
+    "client_id": 5,
+    "session_id": 14,
+    "statut": "actif",
+    "montant_ht": 19226.66,
+    "date_signature": "2024-03-11"
+  },
+  {
+    "id": 34,
+    "client_id": 5,
+    "session_id": 27,
+    "statut": "solde",
+    "montant_ht": 7728.47,
+    "date_signature": "2024-02-17"
+  },
+  {
+    "id": 35,
+    "client_id": 3,
+    "session_id": 19,
+    "statut": "actif",
+    "montant_ht": 14213.08,
+    "date_signature": "2024-05-14"
+  },
+  {
+    "id": 36,
+    "client_id": 2,
+    "session_id": 24,
+    "statut": "actif",
+    "montant_ht": 22491.63,
+    "date_signature": "2024-12-04"
+  },
+  {
+    "id": 37,
+    "client_id": 3,
+    "session_id": 38,
+    "statut": "actif",
+    "montant_ht": 23242.51,
+    "date_signature": "2025-05-01"
+  },
+  {
+    "id": 38,
+    "client_id": 6,
+    "session_id": 45,
+    "statut": "actif",
+    "montant_ht": 24143.73,
+    "date_signature": "2024-01-22"
+  },
+  {
+    "id": 39,
+    "client_id": 2,
+    "session_id": 31,
+    "statut": "actif",
+    "montant_ht": 18801.45,
+    "date_signature": "2024-11-22"
+  },
+  {
+    "id": 40,
+    "client_id": 3,
+    "session_id": 5,
+    "statut": "actif",
+    "montant_ht": 12421.09,
+    "date_signature": "2025-01-11"
+  },
+  {
+    "id": 41,
+    "client_id": 1,
+    "session_id": 9,
+    "statut": "actif",
+    "montant_ht": 10092.18,
+    "date_signature": "2025-04-29"
+  },
+  {
+    "id": 42,
+    "client_id": 2,
+    "session_id": 27,
+    "statut": "actif",
+    "montant_ht": 21859.87,
+    "date_signature": "2025-08-09"
+  },
+  {
+    "id": 43,
+    "client_id": 1,
+    "session_id": 40,
+    "statut": "solde",
+    "montant_ht": 10721.06,
+    "date_signature": "2024-01-13"
+  },
+  {
+    "id": 44,
+    "client_id": 2,
+    "session_id": 6,
+    "statut": "actif",
+    "montant_ht": 16706.3,
+    "date_signature": "2024-09-20"
+  },
+  {
+    "id": 45,
+    "client_id": 7,
+    "session_id": 22,
+    "statut": "solde",
+    "montant_ht": 23487.78,
+    "date_signature": "2025-08-17"
+  },
+  {
+    "id": 46,
+    "client_id": 8,
+    "session_id": 29,
+    "statut": "solde",
+    "montant_ht": 21282.51,
+    "date_signature": "2024-03-26"
+  },
+  {
+    "id": 47,
+    "client_id": 1,
+    "session_id": 20,
+    "statut": "actif",
+    "montant_ht": 13062.01,
+    "date_signature": "2024-08-23"
+  },
+  {
+    "id": 48,
+    "client_id": 2,
+    "session_id": 32,
+    "statut": "solde",
+    "montant_ht": 7884.1,
+    "date_signature": "2024-01-12"
+  },
+  {
+    "id": 49,
+    "client_id": 6,
+    "session_id": 20,
+    "statut": "actif",
+    "montant_ht": 17597.15,
+    "date_signature": "2024-07-26"
+  },
+  {
+    "id": 50,
+    "client_id": 3,
+    "session_id": 22,
+    "statut": "solde",
+    "montant_ht": 13461.15,
+    "date_signature": "2024-09-04"
+  },
+  {
+    "id": 51,
+    "client_id": 6,
+    "session_id": 26,
+    "statut": "actif",
+    "montant_ht": 6565.63,
+    "date_signature": "2025-03-17"
+  },
+  {
+    "id": 52,
+    "client_id": 4,
+    "session_id": 14,
+    "statut": "solde",
+    "montant_ht": 7050.28,
+    "date_signature": "2024-11-20"
+  },
+  {
+    "id": 53,
+    "client_id": 4,
+    "session_id": 9,
+    "statut": "actif",
+    "montant_ht": 13418.74,
+    "date_signature": "2024-02-11"
+  },
+  {
+    "id": 54,
+    "client_id": 2,
+    "session_id": 18,
+    "statut": "actif",
+    "montant_ht": 4595.08,
+    "date_signature": "2025-04-27"
+  },
+  {
+    "id": 55,
+    "client_id": 5,
+    "session_id": 14,
+    "statut": "solde",
+    "montant_ht": 10798.61,
+    "date_signature": "2025-06-16"
+  },
+  {
+    "id": 56,
+    "client_id": 8,
+    "session_id": 44,
+    "statut": "actif",
+    "montant_ht": 18474.36,
+    "date_signature": "2025-04-08"
+  },
+  {
+    "id": 57,
+    "client_id": 6,
+    "session_id": 5,
+    "statut": "actif",
+    "montant_ht": 8396.85,
+    "date_signature": "2024-02-12"
+  },
+  {
+    "id": 58,
+    "client_id": 5,
+    "session_id": 37,
+    "statut": "actif",
+    "montant_ht": 9107.7,
+    "date_signature": "2025-07-31"
+  },
+  {
+    "id": 59,
+    "client_id": 1,
+    "session_id": 42,
+    "statut": "actif",
+    "montant_ht": 11319.35,
+    "date_signature": "2024-07-13"
+  },
+  {
+    "id": 60,
+    "client_id": 1,
+    "session_id": 18,
+    "statut": "actif",
+    "montant_ht": 19922.85,
+    "date_signature": "2024-02-18"
+  }
+]

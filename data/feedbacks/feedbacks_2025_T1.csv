@@ -1,0 +1,100 @@
+session_id;stagiaire_email;date_saisie;note_globale;commentaire
+41;quentin.robert@example.org;2025-02-22;3;Salle inconfortable.
+41;;2025-03-31;5;Rythme soutenu, à anticiper.
+2;pauline.durand@example.org;2025-03-09;5;Excellente animation de groupe.
+24;zoe.dubois@example.org;2025-03-08;99;Rythme soutenu, à anticiper.
+12;marc.martin@example.org;2025-01-22;2;Contenu dense mais accessible.
+9;amine.petit@example.org;2025-02-09;1;Excellente animation de groupe.
+6;marc.robert@example.org;2025-01-12;3;
+23;yasmine.petit@example.org;2025-01-27;4;Salle inconfortable.
+45;quentin.robert@example.org;2025-01-28;4;Excellente animation de groupe.
+12;amine.bernard@example.org;2025-01-07;4;Rythme soutenu, à anticiper.
+45;pauline.bernard@example.org;2025-01-25;99;Top, je recommande.
+10;rachid.robert@example.org;2025-02-01;5;Très bonne formation, formateur clair.
+7;olivier.martin@example.org;2025-01-05;5;Aurait aimé plus d'exercices pratiques.
+42;amine.durand@example.org;2025-02-08;4;Rythme soutenu, à anticiper.
+40;theo.petit@example.org;2025-03-27;3;Aurait aimé plus d'exercices pratiques.
+29;yasmine.robert@example.org;2025-03-02;4;Plateforme un peu lente le matin.
+19;pauline.petit@example.org;2025-01-19;1;Très bonne formation, formateur clair.
+20;amine.martin@example.org;2025-03-18;2;Plateforme un peu lente le matin.
+34;sophie.robert@example.org;2025-02-11;4;Salle inconfortable.
+10;marc.petit@example.org;2025-03-31;1;Salle inconfortable.
+6;lea.durand@example.org;2025-02-02;5;Rythme soutenu, à anticiper.
+34;olivier.bernard@example.org;2025-02-22;2;Très bonne formation, formateur clair.
+27;lea.robert@example.org;2025-03-22;3;Plateforme un peu lente le matin.
+19;marc.robert@example.org;2025-01-16;4;Top, je recommande.
+6;theo.richard@example.org;2025-02-07;3;Excellente animation de groupe.
+18;marc.bernard@example.org;2025-03-15;4;Top, je recommande.
+12;quentin.martin@example.org;2025-01-13;5;Plateforme un peu lente le matin.
+5;;2025-03-25;1;Top, je recommande.
+24;olivier.petit@example.org;2025-02-02;2;Bon équilibre théorie/pratique.
+45;amine.durand@example.org;2025-02-26;5;Contenu dense mais accessible.
+21;theo.bernard@example.org;2025-01-03;3;Bon équilibre théorie/pratique.
+34;olivier.richard@example.org;2025-01-06;1;Contenu dense mais accessible.
+36;rachid.dubois@example.org;2025-01-19;3;Salle inconfortable.
+1;yasmine.durand@example.org;2025-03-09;5;Top, je recommande.
+6;yasmine.bernard@example.org;2025-01-20;4;Rythme soutenu, à anticiper.
+27;yasmine.richard@example.org;2025-03-28;5;Contenu dense mais accessible.
+12;sophie.richard@example.org;2025-02-20;4;Excellente animation de groupe.
+25;lea.bernard@example.org;2025-03-15;4;Très bonne formation, formateur clair.
+42;olivier.richard@example.org;2025-03-24;4;
+41;lea.bernard@example.org;2025-01-12;4;Très bonne formation, formateur clair.
+41;yasmine.dubois@example.org;2025-01-25;2;Salle inconfortable.
+16;nadia.bernard@example.org;2025-01-13;4;Bon équilibre théorie/pratique.
+23;amine.durand@example.org;2025-01-09;5;Aurait aimé plus d'exercices pratiques.
+10;lea.bernard@example.org;2025-03-28;3;Très bonne formation, formateur clair.
+34;olivier.bernard@example.org;2025-01-29;4;Bon équilibre théorie/pratique.
+14;pauline.robert@example.org;2025-02-02;5;
+44;lea.dubois@example.org;2025-02-08;1;
+17;lea.richard@example.org;2025-02-23;2;Aurait aimé plus d'exercices pratiques.
+28;pauline.robert@example.org;2025-03-31;1;
+1;sophie.robert@example.org;2025-03-29;5;Bon équilibre théorie/pratique.
+24;marc.petit@example.org;2025-02-28;1;Salle inconfortable.
+3;marc.richard@example.org;2025-03-29;99;Rythme soutenu, à anticiper.
+37;sophie.durand@example.org;2025-02-16;4;Très bonne formation, formateur clair.
+45;quentin.robert@example.org;2025-01-28;4;Excellente animation de groupe.
+23;nadia.richard@example.org;2025-01-08;1;Excellente animation de groupe.
+17;lea.richard@example.org;2025-02-05;4;Bon équilibre théorie/pratique.
+4;sophie.richard@example.org;2025-02-21;5;Top, je recommande.
+12;pauline.robert@example.org;2025-02-27;3;Rythme soutenu, à anticiper.
+28;sophie.dubois@example.org;2025-03-03;3;Salle inconfortable.
+2;pauline.durand@example.org;2025-03-09;5;Excellente animation de groupe.
+36;marc.durand@example.org;2025-03-29;3;Salle inconfortable.
+21;nadia.petit@example.org;2025-03-01;1;
+15;sophie.dubois@example.org;2025-02-27;5;Top, je recommande.
+27;olivier.robert@example.org;2025-03-12;3;Contenu dense mais accessible.
+25;rachid.robert@example.org;2025-01-26;5;Aurait aimé plus d'exercices pratiques.
+28;lea.richard@example.org;2025-01-01;3;Très bonne formation, formateur clair.
+19;pauline.petit@example.org;2025-02-07;4;Rythme soutenu, à anticiper.
+32;zoe.durand@example.org;2025-01-12;4;Très bonne formation, formateur clair.
+8;quentin.richard@example.org;2025-01-17;2;Salle inconfortable.
+4;theo.petit@example.org;2025-01-05;4;Très bonne formation, formateur clair.
+7;theo.durand@example.org;2025-03-15;4;Salle inconfortable.
+30;rachid.durand@example.org;2025-03-03;5;Contenu dense mais accessible.
+12;amine.robert@example.org;2025-03-25;5;Rythme soutenu, à anticiper.
+29;olivier.dubois@example.org;2025-01-21;5;Rythme soutenu, à anticiper.
+38;theo.martin@example.org;2025-01-06;4;Top, je recommande.
+27;marc.durand@example.org;2025-03-03;3;Bon équilibre théorie/pratique.
+21;nadia.richard@example.org;2025-02-03;2;Contenu dense mais accessible.
+45;marc.dubois@example.org;2025-03-19;5;Contenu dense mais accessible.
+4;yasmine.bernard@example.org;2025-03-21;4;
+12;amine.bernard@example.org;2025-01-07;4;Rythme soutenu, à anticiper.
+15;yasmine.richard@example.org;2025-01-10;1;
+9;sophie.martin@example.org;2025-03-09;4;Rythme soutenu, à anticiper.
+37;marc.bernard@example.org;2025-01-24;5;Plateforme un peu lente le matin.
+34;rachid.martin@example.org;2025-03-12;4;Aurait aimé plus d'exercices pratiques.
+41;yasmine.bernard@example.org;2025-02-16;4;Plateforme un peu lente le matin.
+42;amine.durand@example.org;2025-03-03;4;Très bonne formation, formateur clair.
+24;yasmine.petit@example.org;2025-01-20;2;Top, je recommande.
+39;rachid.durand@example.org;2025-02-09;1;
+29;marc.richard@example.org;2025-03-08;1;Contenu dense mais accessible.
+41;yasmine.dubois@example.org;2025-01-25;2;Salle inconfortable.
+31;pauline.durand@example.org;2025-02-15;3;Aurait aimé plus d'exercices pratiques.
+45;zoe.robert@example.org;2025-03-30;3;
+3;yasmine.durand@example.org;2025-02-13;3;Aurait aimé plus d'exercices pratiques.
+25;rachid.richard@example.org;2025-01-03;5;Contenu dense mais accessible.
+18;olivier.petit@example.org;2025-02-24;4;Contenu dense mais accessible.
+12;zoe.robert@example.org;2025-03-31;4;Top, je recommande.
+44;pauline.richard@example.org;2025-01-24;4;Salle inconfortable.
+43;;2025-01-08;5;Excellente animation de groupe.
+35;amine.petit@example.org;2025-01-28;2;Plateforme un peu lente le matin.
