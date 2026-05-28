@@ -1,0 +1,58 @@
+.
+├── .env.example                         # Modèle des variables d'environnement locales.
+├── .gitignore                           # Exclusions Git du projet.
+├── alembic.ini                          # Configuration Alembic et URL Postgres par défaut.
+├── assistant                            # Assistant LangChain et outils SQL.
+│   ├── __init__.py                      # Marque le dossier comme package Python.
+│   ├── agent.py                         # Construit l'agent Azure/Kimi et expose ask().
+│   └── tools.py                         # Outils LangChain pour lancer les requêtes SQL et feedbacks.
+├── collect                              # Collecteurs de données vers Postgres.
+│   ├── __init__.py                      # Marque le dossier comme package Python.
+│   ├── _common.py                       # Connexion DB, HTTP retry, env et logging partagés.
+│   ├── feedbacks.py                     # Collecteur CSV feedbacks, encore non branché.
+│   └── sessions.py                      # Collecte API sessions/stagiaires et upsert en base.
+├── data                                 # Données fixtures et exports métier.
+│   ├── contrats.json                    # Fixtures de contrats importées par seed.py.
+│   └── feedbacks                        # Exports CSV trimestriels des feedbacks stagiaires.
+│       ├── feedbacks_2024_T3.csv        # Feedbacks du troisième trimestre 2024.
+│       ├── feedbacks_2024_T4.csv        # Feedbacks du quatrième trimestre 2024.
+│       ├── feedbacks_2025_T1.csv        # Feedbacks du premier trimestre 2025.
+│       ├── feedbacks_2025_T2.csv        # Feedbacks du deuxième trimestre 2025.
+│       └── feedbacks_2025_T3.csv        # Feedbacks du troisième trimestre 2025.
+├── docker-compose.yml                   # Lance Postgres 16 et le mock FastAPI local.
+├── docs                                 # Documentation projet.
+│   └── RGPD-memo.md                     # Mémo DPO sur les données autorisées/interdites.
+├── Makefile                             # Commandes usuelles: up, migrate, seed, ingest, chat, test.
+├── migrations                           # Environnement et versions Alembic.
+│   ├── env.py                           # Charge DB_URL et exécute les migrations Alembic.
+│   ├── script.py.mako                   # Gabarit de génération des nouvelles migrations.
+│   └── versions                         # Historique des migrations de schéma.
+│       ├── 001_create_sessions_and_clients.py  # Crée clients, sessions et leurs index.
+│       ├── 002_create_stagiaires.py     # Crée stagiaires et index session/email.
+│       ├── 003_create_feedbacks.py      # Crée feedbacks, contrainte d'unicité et index session.
+│       └── 005_add_contrats_index.py    # Ajoute un index sur contrats(statut, date_signature).
+├── mock_api                             # API Nodalys simulée pour le développement.
+│   ├── app                              # Code FastAPI du mock.
+│   │   ├── __init__.py                  # Marque le dossier comme package Python.
+│   │   ├── main.py                      # Endpoints /health, /api/sessions, /api/stagiaires et rate limit.
+│   │   └── seed.py                      # Génère les données fictives sessions/stagiaires.
+│   └── Dockerfile                       # Image du mock API avec FastAPI et Uvicorn.
+├── pyproject.toml                       # Métadonnées projet, dépendances Python et packaging.
+├── queries                              # Requêtes SQL exposées à l'assistant.
+│   ├── contrats_actifs.sql              # Compte les contrats actifs, mais référence un champ absent.
+│   ├── feedbacks_recents.sql            # Liste les feedbacks créés dans les sept derniers jours.
+│   ├── stagiaires_par_session.sql       # Calcule l'effectif par session avec le client.
+│   └── top_formations.sql               # Top sessions Q3 par nombre de stagiaires.
+├── README.md                            # Présentation, setup, layout et problèmes connus.
+├── scripts                              # Scripts ponctuels de génération ou interaction.
+│   ├── chat.py                          # REPL console pour discuter avec l'assistant.
+│   ├── generate_contrats_fixture.py     # Génère data/contrats.json.
+│   └── generate_csv_feedbacks.py        # Génère les CSV feedbacks trimestriels.
+├── seed.py                              # Importe les contrats fixtures en base.
+├── tests                                # Tests automatisés.
+│   ├── __init__.py                      # Marque le dossier comme package Python.
+│   └── test_smoke.py                    # Tests fumigènes de présence des fichiers clés.
+├── tree                                 # Arborescence annotée du dépôt.
+└── uv.lock                              # Verrouillage exact des dépendances uv.
+
+13 directories, 43 files
