@@ -24,6 +24,10 @@ def _engine_from_env(env_var: str = "DB_URL"):
 
 @tool
 def query_db(query_name: str) -> str:
+    """Exécute une requête SQL prédéfinie.
+
+    Utile pour répondre à des questions de type « quelles sont les sessions avec le plus de stagiaires ? ».
+    """
     sql_path = QUERIES_DIR / f"{query_name}.sql"
     if not sql_path.exists():
         return f"Requête inconnue : {query_name}. Disponibles : " + ", ".join(
