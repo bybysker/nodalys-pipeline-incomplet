@@ -1,0 +1,124 @@
+<mxfile host="Electron">
+  <diagram name="Fichiers → Tables BDD" id="bdd_precise">
+    <mxGraphModel dx="2988" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t_clients" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="clients" vertex="1">
+          <mxGeometry height="70" width="110" x="580" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sessions" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="sessions" vertex="1">
+          <mxGeometry height="70" width="110" x="580" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t_stagiaires" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="stagiaires" vertex="1">
+          <mxGeometry height="70" width="110" x="580" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="t_feedbacks" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="feedbacks" vertex="1">
+          <mxGeometry height="70" width="110" x="580" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="t_contrats" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="contrats" vertex="1">
+          <mxGeometry height="70" width="110" x="580" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="m_group" parent="1" style="swimlane;startSize=25;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;" value="migrations/versions/" vertex="1">
+          <mxGeometry height="260" width="310" x="-10" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="m001" parent="m_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="001 → clients, sessions" vertex="1">
+          <mxGeometry height="30" width="270" x="20" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="m002" parent="m_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="002 → stagiaires" vertex="1">
+          <mxGeometry height="30" width="270" x="20" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="m003" parent="m_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="003 → feedbacks" vertex="1">
+          <mxGeometry height="30" width="270" x="20" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="m004" parent="m_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="004 → contrats" vertex="1">
+          <mxGeometry height="30" width="270" x="20" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="m005" parent="m_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="005 → index contrats" vertex="1">
+          <mxGeometry height="30" width="270" x="20" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="f_sessions" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="collect/sessions.py" vertex="1">
+          <mxGeometry height="50" width="190" x="20" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="es_cl" edge="1" label="UPSERT" parent="1" source="f_sessions" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#b85450;strokeWidth=2;" target="t_clients">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es_se" edge="1" label="UPSERT" parent="1" source="f_sessions" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#b85450;strokeWidth=2;" target="t_sessions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="es_st" edge="1" label="UPSERT" parent="1" source="f_sessions" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#b85450;strokeWidth=2;" target="t_stagiaires">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_feedbacks" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="collect/feedbacks.py" vertex="1">
+          <mxGeometry height="50" width="190" x="40" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ef_fb" edge="1" label="UPSERT" parent="1" source="f_feedbacks" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#b85450;strokeWidth=2;" target="t_feedbacks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_seed" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="seed.py" vertex="1">
+          <mxGeometry height="50" width="190" x="40" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="eseed_co" edge="1" label="UPSERT" parent="1" source="f_seed" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#82b366;strokeWidth=2;" target="t_contrats">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_tools" parent="1" style="shape=component;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="assistant/tools.py" vertex="1">
+          <mxGeometry height="50" width="190" x="900" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="q_group" parent="1" style="swimlane;startSize=25;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="queries/*.sql" vertex="1">
+          <mxGeometry height="200" width="280" x="900" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="q1" parent="q_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="top_formations.sql&#xa;→ sessions, stagiaires" vertex="1">
+          <mxGeometry height="30" width="240" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q2" parent="q_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="stagiaires_par_session.sql&#xa;→ sessions, clients, stagiaires" vertex="1">
+          <mxGeometry height="30" width="240" x="20" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="q3" parent="q_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="feedbacks_recents.sql&#xa;→ feedbacks" vertex="1">
+          <mxGeometry height="30" width="240" x="20" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="q4" parent="q_group" style="shape=component;whiteSpace=wrap;html=1;fontSize=11;" value="contrats_actifs.sql&#xa;→ contrats, stagiaires" vertex="1">
+          <mxGeometry height="30" width="240" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="et_q" edge="1" label="charge .sql" parent="1" source="f_tools" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#9673a6;strokeWidth=2;" target="q_group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="et_fb" edge="1" label="SELECT direct&#xa;(query_feedbacks)" parent="1" source="f_tools" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#9673a6;strokeWidth=2;dashed=1;" target="t_feedbacks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eq1_s" edge="1" label="SELECT" parent="1" source="q1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#d6b656;" target="t_sessions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eq1_st" edge="1" label="SELECT" parent="1" source="q1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#d6b656;" target="t_stagiaires">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eq2_cl" edge="1" label="SELECT" parent="1" source="q2" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#d6b656;" target="t_clients">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eq3_fb" edge="1" label="SELECT" parent="1" source="q3" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#d6b656;" target="t_feedbacks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eq4_co" edge="1" label="SELECT" parent="1" source="q4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#d6b656;" target="t_contrats">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eq4_st" edge="1" label="SELECT" parent="1" source="q4" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;rounded=0;html=1;strokeColor=#d6b656;" target="t_stagiaires">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="leg" parent="1" style="swimlane;startSize=20;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" value="Légende" vertex="1">
+          <mxGeometry height="160" width="230" x="900" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="leg" style="shape=component;fillColor=#f8cecc;strokeColor=#b85450;whiteSpace=wrap;html=1;fontSize=11;" value="Collecteurs (écrivent)" vertex="1">
+          <mxGeometry height="25" width="200" x="15" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="leg" style="shape=component;fillColor=#d5e8d4;strokeColor=#82b366;whiteSpace=wrap;html=1;fontSize=11;" value="seed.py (données initiales)" vertex="1">
+          <mxGeometry height="25" width="200" x="15" y="61" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" parent="leg" style="shape=component;fillColor=#e1d5e7;strokeColor=#9673a6;whiteSpace=wrap;html=1;fontSize=11;" value="Assistant IA (lit)" vertex="1">
+          <mxGeometry height="25" width="200" x="15" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" parent="leg" style="shape=component;fillColor=#fff2cc;strokeColor=#d6b656;whiteSpace=wrap;html=1;fontSize=11;" value="Requêtes SQL (lit)" vertex="1">
+          <mxGeometry height="25" width="200" x="15" y="127" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

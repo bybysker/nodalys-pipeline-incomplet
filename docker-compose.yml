@@ -27,5 +27,9 @@ services:
       timeout: 5s
       retries: 10
 
+
+ 
+
 volumes:
   nodalys_db_data:
+  pgadmin_data:

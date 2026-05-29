@@ -14,6 +14,10 @@ from sqlalchemy import text
 from collect._common import db_session, log
 
 
+
+
+
+
 def seed_contrats():
     fixture = Path(__file__).parent / "data" / "contrats.json"
     if not fixture.exists():

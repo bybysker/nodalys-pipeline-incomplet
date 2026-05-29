@@ -13,12 +13,14 @@ logs:
 migrate:
 	uv run alembic upgrade head
 
+ingest: (à faire avant de lancer seed)
+	uv run python -m collect.sessions
+	uv run python -m collect.feedbacks
+
 seed:
 	uv run python seed.py
 
-ingest:
-	uv run python -m collect.sessions
-	uv run python -m collect.feedbacks
+
 
 chat:
 	uv run python scripts/chat.py

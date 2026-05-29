@@ -1,0 +1,16 @@
+## [2026-05-29]
+
+### Ajouté
+
+- `comprendre_le_projet/flux_uml_bdd.drawio` : diagramme précis fichiers → tables avec opérations (UPSERT/SELECT/CREATE) par fichier et par table.
+- `comprendre_le_projet/mcd.drawio` : MCD complet des 5 tables (`clients`, `sessions`, `stagiaires`, `feedbacks`, `contrats`) avec colonnes, types, contraintes et relations.
+
+### Corrigé
+- `collect/feedbacks.py` : collecteur entièrement reécrit — modèle renommé `FeedbackPayload`, champ `id` supprimé (absent du CSV), chemin corrigé vers `data/feedbacks/`, `db_session` sorti de la boucle, `source_csv` ajouté, `ON CONFLICT` aligné sur la contrainte réelle `(session_id, stagiaire_email, date_saisie)`.
+
+---
+
+## [2026-05-28]
+
+### Ajouté
+- `migrations/versions/004_create_contrats.py` : migration manquante — crée la table `contrats` (id, client_id, session_id, statut, montant_ht, date_signature). Son absence cassait la chaîne Alembic et empêchait `make migrate` de s'exécuter (`KeyError: '004'`).
