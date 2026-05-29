@@ -1,4 +1,4 @@
-"""Génère data/contrats.json — fixtures importées par seed.py.
+"""Génère data/contrats.json — fixtures importées par collect.contrats.py.
 
 Les contrats lient ``clients`` (id 1..8) à des ``sessions`` (id 1..N),
 avec un statut ``actif`` ou ``solde``. Aucun lien direct à ``stagiaires`` :
