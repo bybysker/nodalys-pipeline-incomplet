@@ -23,7 +23,7 @@ Le chat fonctionne déjà et ne faut surtout pas le casser. Il fonctionne en 3 �
   4. l'agent répond à la question en utilisant les données de la base de données.
 
 ## Qu'est-ce qui manque ou est cassé ? Comment l'avez-vous repéré (exécution, lecture du code, messages d'erreur) ?
-- Il y a un problème avec les migrations. On s'en rend compte en lançant un `make migrate` qui échoue ave cette erreur :
+- Il y a un problème avec les migrations. On s'en rend compte en lançant un `make migrate` qui échoue avec cette erreur :
 ```
 Index de performance sur contrats.statut + date_signature. is not present
 ```
