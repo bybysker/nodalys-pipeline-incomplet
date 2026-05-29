@@ -24,8 +24,7 @@ cp .env.example .env       # renseigne AZURE_AI_INFERENCE_*
 uv sync
 make up                    # postgres + mock API en local
 make migrate               # alembic upgrade head
-make seed                  # contrats (fixtures)
-make ingest                # collecte sessions + stagiaires + feedbacks
+make ingest                # collecte sessions + contrats + stagiaires + feedbacks
 make chat                  # REPL avec l'assistant
 ```
 
@@ -63,13 +62,12 @@ Variables d'environnement (cf. `.env.example`) :
 
 Quelques points en suspens à reprendre :
 
-- L'ingestion des feedbacks CSV n'est pas branchée.
+- L'ingestion des feedbacks CSV n'est pas branchée. [DONE]
 - Plusieurs requêtes dans `queries/` sont des tentatives non
   finalisées (`contrats_actifs.sql`, `stagiaires_par_session.sql`,
-  `feedbacks_recents.sql`).
-- Schéma `contrats` : index préparé mais pas la table associée.
-- Assistant : `query_feedbacks` n'est plus branché depuis le refactor
-  du module `tools`.
+  `feedbacks_recents.sql`). [DONE]
+- Schéma `contrats` : index préparé mais pas la table associée. [DONE]
+- Assistant : `query_feedbacks` n'est plus branché depuis le refactor du module `tools`. [DONE]
 
 ## Contact
 

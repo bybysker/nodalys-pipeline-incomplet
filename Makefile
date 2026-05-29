@@ -1,4 +1,4 @@
-.PHONY: up down migrate seed ingest chat test fmt logs
+.PHONY: up down migrate ingest chat test fmt logs
 
 up:
 	docker compose up -d
@@ -13,11 +13,9 @@ logs:
 migrate:
 	uv run alembic upgrade head
 
-seed:
-	uv run python seed.py
-
 ingest:
 	uv run python -m collect.sessions
+	uv run python -m collect.contrats
 	uv run python -m collect.feedbacks
 
 chat:

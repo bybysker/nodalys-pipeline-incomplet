@@ -2,11 +2,12 @@
 -- pour répondre à « avec qui avons-nous des contrats actifs ? ».
 
 SELECT
-    s.prenom,
-    s.nom,
+    st.prenom,
+    st.nom,
     COUNT(c.id) AS nb_contrats_actifs
-FROM contrats c
-JOIN stagiaires s ON c.stagiaire_id = s.id
+FROM sessions s
+JOIN stagiaires st ON st.session_id = s.id
+JOIN contrats c on c.session_id = s.id
 WHERE c.statut = 'actif'
-GROUP BY s.prenom, s.nom
+GROUP BY st.prenom, st.nom
 ORDER BY nb_contrats_actifs DESC;
