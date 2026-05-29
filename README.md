@@ -24,8 +24,7 @@ cp .env.example .env       # renseigne AZURE_AI_INFERENCE_*
 uv sync
 make up                    # postgres + mock API en local
 make migrate               # alembic upgrade head
-make seed                  # contrats (fixtures)
-make ingest                # collecte sessions + stagiaires + feedbacks
+make ingest                # collecte sessions + contrats + stagiaires + feedbacks
 make chat                  # REPL avec l'assistant
 ```
 
