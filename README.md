@@ -62,10 +62,10 @@ Variables d'environnement (cf. `.env.example`) :
 
 Quelques points en suspens à reprendre :
 
-- L'ingestion des feedbacks CSV n'est pas branchée.
+- L'ingestion des feedbacks CSV n'est pas branchée. [DONE]
 - Plusieurs requêtes dans `queries/` sont des tentatives non
   finalisées (`contrats_actifs.sql`, `stagiaires_par_session.sql`,
-  `feedbacks_recents.sql`).
+  `feedbacks_recents.sql`). [DONE]
 - Schéma `contrats` : index préparé mais pas la table associée.
 - Assistant : `query_feedbacks` n'est plus branché depuis le refactor
   du module `tools`.
