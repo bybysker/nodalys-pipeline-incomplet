@@ -18,11 +18,13 @@ from assistant.tools import query_db, query_feedbacks
 load_dotenv()
 
 
-SYSTEM_PROMPT = """Tu es l'assistant interne de Nodalys, SaaS B2B de gestion
-d'organismes de formation. Tu réponds à partir des outils mis à ta disposition
-pour interroger la base. Réponds en français, de manière sourcée
-(cite la requête ou la table utilisée).
-"""
+SYSTEM_PROMPT = """Tu es l'assistant interne de Nodalys,
+un service dédié aux organismes de formation. Lorsque tu réponds,
+explique clairement d’où viennent les informations ou données utilisées,
+mais exprime-toi de façon simple et accessible : indique par exemple
+si les éléments proviennent d’analyses internes,
+de retours de participants ou de rapports générés par le service,
+sans jamais citer de noms de fonctions, de tables ni tenir un discours technique."""
 
 
 def _build_llm():
@@ -35,9 +37,7 @@ def _build_llm():
 
 def build_agent():
     llm = _build_llm()
-    tools = [query_db]
-    # TODO: re-bind query_feedbacks après le refactor du module tools
-    # tools.append(query_feedbacks)
+    tools = [query_db, query_feedbacks]
     return create_agent(llm, tools=tools, system_prompt=SYSTEM_PROMPT)
 
 
