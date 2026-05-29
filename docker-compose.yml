@@ -28,7 +28,15 @@ services:
       retries: 10
 
 
- 
+  cron-jobs:
+    build: .
+    volumes:
+      - ./crontab:/etc/cron.d/nodalys-rgpd:ro
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    command: ["cron", "-f"]
 
 volumes:
   nodalys_db_data:
