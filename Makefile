@@ -10,15 +10,19 @@ down:
 logs:
 	docker compose logs -f
 
+ingest: (à faire avant de lancer seed)
+	uv run python -m collect.sessions
+	uv run python -m collect.feedbacks
+
 migrate:
 	uv run alembic upgrade head
+
+
 
 seed:
 	uv run python seed.py
 
-ingest:
-	uv run python -m collect.sessions
-	uv run python -m collect.feedbacks
+
 
 chat:
 	uv run python scripts/chat.py

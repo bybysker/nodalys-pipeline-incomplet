@@ -13,6 +13,7 @@ Lancement :
 from __future__ import annotations
 
 from datetime import date
+from typing import Optional
 
 from pydantic import BaseModel, Field
 from sqlalchemy import text
@@ -101,14 +102,40 @@ def upsert_sessions(session, sessions_payload: list[SessionPayload]) -> int:
     return inserted
 
 
+class StagiairePayload(BaseModel):
+    """Schéma strict des champs autorisés — tout champ absent de ce modèle
+    (ex. telephone_personnel) est silencieusement ignoré."""
+
+    model_config = {"extra": "ignore"}  # conformité RGPD
+
+    id: int
+    session_id: int
+    prenom: str
+    nom: str
+    email: Optional[str]  # conformité RGPD : None si la session n'est plus active
+
+
+def _fetch_active_session_ids(session) -> set[int]:
+    """Retourne les IDs des sessions dont date_fin >= aujourd'hui."""
+    rows = session.execute(
+        text("SELECT id FROM sessions WHERE date_fin >= :today"),  # conformité RGPD
+        {"today": date.today()},
+    )
+    return {row[0] for row in rows}
+
+
 def upsert_stagiaires(session) -> int:
     """Collecte des stagiaires depuis ``GET /api/stagiaires`` et upsert."""
     base = get_api_base_url()
+    active_ids = _fetch_active_session_ids(session)  # conformité RGPD
     # TODO: l'endpoint stagiaires renvoie maintenant du paginé, à passer
     # en boucle sur next_cursor un de ces jours.
     payload = http_get_json(f"{base}/api/stagiaires")
     inserted = 0
     for item in payload["items"]:
+        s = StagiairePayload.model_validate(item)  # conformité RGPD : filtre les champs interdits
+        if s.session_id not in active_ids:  # conformité RGPD
+            s.email = None                  # conformité RGPD : session terminée, email non conservé
         result = session.execute(
             text(
                 """
@@ -121,13 +148,7 @@ def upsert_stagiaires(session) -> int:
                       email = EXCLUDED.email
                 """
             ),
-            {
-                "id": item["id"],
-                "session_id": item["session_id"],
-                "prenom": item["prenom"],
-                "nom": item["nom"],
-                "email": item["email"],
-            },
+            s.model_dump(),  # conformité RGPD : seuls les champs déclarés dans StagiairePayload
         )
         inserted += result.rowcount or 0
     log.info("collect.stagiaires.upserted", count=inserted)

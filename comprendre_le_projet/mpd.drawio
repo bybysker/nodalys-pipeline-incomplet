@@ -1,0 +1,145 @@
+<mxfile host="Electron">
+  <diagram name="MCD Nodalys" id="mcd_nodalys">
+    <mxGraphModel dx="3383" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="clients_title" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" value="clients" vertex="1">
+          <mxGeometry height="175" width="230" x="-1380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="clients_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔑 id : Integer (PK)" vertex="1">
+          <mxGeometry height="25" width="210" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="clients_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="siret : String(14) UNIQUE" vertex="1">
+          <mxGeometry height="25" width="210" x="10" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="clients_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="raison_sociale : String(255)" vertex="1">
+          <mxGeometry height="25" width="210" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="clients_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="created_at : DateTime" vertex="1">
+          <mxGeometry height="25" width="210" x="10" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="c_idx" parent="clients_title" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;fontSize=10;fontColor=#666666;" value="INDEX raison_sociale" vertex="1">
+          <mxGeometry height="20" width="210" x="10" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="sessions_title" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" value="sessions" vertex="1">
+          <mxGeometry height="255" width="240" x="-1110" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔑 id : Integer (PK)" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="code : String(64) UNIQUE" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="titre : String(255)" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔗 client_id : Integer (FK)" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="date_debut : Date" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="date_fin : Date" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="s7" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="duree_heures : Integer" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="s8" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="places_max : Integer" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="s_idx" parent="sessions_title" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;fontSize=10;fontColor=#666666;" value="INDEX client_id, date_debut" vertex="1">
+          <mxGeometry height="20" width="220" x="10" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="stagiaires_title" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" value="stagiaires" vertex="1">
+          <mxGeometry height="205" width="240" x="-1380" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="st1" parent="stagiaires_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔑 id : Integer (PK)" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="st2" parent="stagiaires_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔗 session_id : Integer (FK)" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="st3" parent="stagiaires_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="prenom : String(128)" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="st4" parent="stagiaires_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="nom : String(128)" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="st5" parent="stagiaires_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="email : String(255) nullable" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="st6" parent="stagiaires_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="created_at : DateTime" vertex="1">
+          <mxGeometry height="25" width="220" x="10" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="st_idx" parent="stagiaires_title" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;fontSize=10;fontColor=#666666;" value="INDEX session_id, email" vertex="1">
+          <mxGeometry height="20" width="220" x="10" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="feedbacks_title" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" value="feedbacks" vertex="1">
+          <mxGeometry height="235" width="260" x="-1040" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" parent="feedbacks_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔑 id : Integer (PK)" vertex="1">
+          <mxGeometry height="25" width="240" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" parent="feedbacks_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔗 session_id : Integer (FK)" vertex="1">
+          <mxGeometry height="25" width="240" x="10" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" parent="feedbacks_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="stagiaire_email : String(255) nullable" vertex="1">
+          <mxGeometry height="25" width="240" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" parent="feedbacks_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="date_saisie : Date" vertex="1">
+          <mxGeometry height="25" width="240" x="10" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" parent="feedbacks_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="note_globale : Integer (1-5)" vertex="1">
+          <mxGeometry height="25" width="240" x="10" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" parent="feedbacks_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="commentaire : Text nullable" vertex="1">
+          <mxGeometry height="25" width="240" x="10" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" parent="feedbacks_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="source_csv : String(255)" vertex="1">
+          <mxGeometry height="25" width="240" x="10" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="f_idx" parent="feedbacks_title" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;fontSize=10;fontColor=#666666;" value="UNIQUE (session_id, stagiaire_email, date_saisie)" vertex="1">
+          <mxGeometry height="20" width="240" x="10" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="contrats_title" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" value="contrats" vertex="1">
+          <mxGeometry height="195" width="250" x="-890" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="co1" parent="contrats_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔑 id : Integer (PK)" vertex="1">
+          <mxGeometry height="25" width="230" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="co2" parent="contrats_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔗 client_id : Integer (FK)" vertex="1">
+          <mxGeometry height="25" width="230" x="10" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="co3" parent="contrats_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="🔗 session_id : Integer (FK)" vertex="1">
+          <mxGeometry height="25" width="230" x="10" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="co4" parent="contrats_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="statut : String(50)" vertex="1">
+          <mxGeometry height="25" width="230" x="10" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="co5" parent="contrats_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="montant_ht : Numeric(10,2)" vertex="1">
+          <mxGeometry height="25" width="230" x="10" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="co6" parent="contrats_title" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;fontSize=12;" value="date_signature : Date" vertex="1">
+          <mxGeometry height="20" width="230" x="10" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="r_cl_se" edge="1" label="1..N" parent="1" source="clients_title" style="edgeStyle=orthogonalEdgeStyle;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;" target="sessions_title">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_se_st" edge="1" label="1..N" parent="1" source="sessions_title" style="edgeStyle=orthogonalEdgeStyle;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;" target="stagiaires_title">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_se_fb" edge="1" label="1..N" parent="1" source="sessions_title" style="edgeStyle=orthogonalEdgeStyle;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;" target="feedbacks_title">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_cl_co" edge="1" label="1..N" parent="1" source="clients_title" style="edgeStyle=orthogonalEdgeStyle;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;" target="contrats_title">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r_se_co" edge="1" label="1..N" parent="1" source="sessions_title" style="edgeStyle=orthogonalEdgeStyle;endArrow=ERmany;startArrow=ERone;startFill=0;endFill=0;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;" target="contrats_title">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

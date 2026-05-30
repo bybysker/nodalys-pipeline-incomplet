@@ -1,0 +1,5 @@
+Le collecteur API filtre-t-il bien les champs interdits avant l'insertion en BDD ?
+La logique conditionnelle sur l'email est-elle implémentée ?
+Anonymisation des feedbacks à J+180
+Purge des commentaires libres à J+30
+

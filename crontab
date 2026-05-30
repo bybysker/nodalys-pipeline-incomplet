@@ -1,0 +1,5 @@
+# conformité RGPD — anonymisation emails à J+180 (tous les jours à 2h)
+0 2 * * * root cd /app && uv run python -m jobs.anonymise_feedbacks >> /proc/1/fd/1 2>&1
+
+# conformité RGPD — purge commentaires à J+30 (tous les jours à 3h)
+0 3 * * * root cd /app && uv run python -m jobs.purge_commentaires >> /proc/1/fd/1 2>&1
