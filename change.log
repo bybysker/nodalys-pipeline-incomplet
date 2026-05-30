@@ -1,10 +1,15 @@
 ## [2026-05-29]
 
-### RGPD — Anonymisation des feedbacks à J+180 + Purge des commentaires à J+365 dans deux jobs avec cron
+### RGPD — Anonymisation des feedbacks à J+180 + Purge des commentaires à J+365 dans deux jobs avec cron (services `cron-jobs` dans docker-compose) :
+- `jobs/anonymise_feedbacks.py` : à J+180 après la fin de session, le champ `stagiaire_email` est remplacé par un hash SHA-256 tronqué (16 premiers caractères hex).
+- `jobs/purge_commentaires.py` : à J+365 après la fin de session, les commentaires (champ `commentaire`) sont remplacés par une chaîne
 
 ### StagiairePayload : RGPD Filtre les champs interdit
 
 ### Ajout Docstring dans le fichier `assistant/tools.py` pour la fonction `query_db` : "Exécute une requête SQL prédéfinie et renvoie les résultats."
+
+### Fix SQL — `queries/stagiaires_par_session.sql`
+- `cl.raison_sociale` et `s.id` ajoutés au `GROUP BY` — PostgreSQL exige que toutes les colonnes non-agrégées du SELECT soient dans le GROUP BY (contrairement à MySQL).
 
 ### Fix BDD
 - LA BDD ne etre construite et peupler correctement à partir du Makefile

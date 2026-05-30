@@ -6,7 +6,7 @@ Collecteurs HTTP (httpx) : appelle l'API Nodalys, insère sessions/stagiaires/fe
 
 ## queries/
 
-Requêtes SQL exposées à l'agent. Certaines sont incomplètes (voir Known issues dans le README).
+Requêtes SQL exposées à l'agent. Certaines sont incomplète
 
 ## assistant/
 
